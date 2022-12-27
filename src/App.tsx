@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useRef } from "react";
 import logo from "./logo.svg";
 import "./App.css";
 import {
@@ -15,16 +15,20 @@ import {
   StickyIn,
   ZoomIn,
   ZoomOut,
+  FadeOut,
 } from "react-scroll-motion";
 import Welcome from "./Components/Welcome/Welcome";
 import AboutMe from "./Components/AboutMe/AboutMe";
 import Projects from "./Components/Projects/Projects";
 
 function App() {
-  const ZoomInScrollOut = batch(StickyIn(), FadeIn(), ZoomIn());
+  const ZoomInScrollOut = batch(Sticky(), ZoomOut());
   const FadeUp = batch(MoveIn(), ZoomIn());
+
+  const scrollRef = useRef<HTMLInputElement>(null);
+
   return (
-    <ScrollContainer>
+    <ScrollContainer snap="proximity">
       <ScrollPage>
         <div
           style={{
@@ -35,7 +39,9 @@ function App() {
             height: "100%",
           }}
         >
-          <Welcome />
+          <Animator animation={FadeOut(0.8, 0)}>
+            <Welcome />
+          </Animator>
         </div>
       </ScrollPage>
       <ScrollPage>
@@ -61,7 +67,10 @@ function App() {
         </div>
       </ScrollPage>
       <ScrollPage>
-        <div style={{ background: "gray", width: "100%", height: "100%" }}>
+        <div
+          ref={scrollRef}
+          style={{ background: "gray", width: "100%", height: "100%" }}
+        >
           <Animator animation={ZoomInScrollOut}>
             <Projects />
           </Animator>
