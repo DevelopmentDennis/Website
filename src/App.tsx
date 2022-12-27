@@ -20,63 +20,56 @@ import {
 import Welcome from "./Components/Welcome/Welcome";
 import AboutMe from "./Components/AboutMe/AboutMe";
 import Projects from "./Components/Projects/Projects";
+import "./App.css";
 
 function App() {
   const ZoomInScrollOut = batch(Sticky(), ZoomOut());
-  const FadeUp = batch(MoveIn(), ZoomIn());
-
-  const scrollRef = useRef<HTMLInputElement>(null);
+  const FadeUp = batch(MoveIn(-1000, 0));
 
   return (
-    <ScrollContainer snap="proximity">
-      <ScrollPage>
-        <div
-          style={{
-            background: "black",
-            flexGrow: 1,
-            flexDirection: "column",
-            display: "flex",
-            height: "100%",
-          }}
-        >
-          <Animator animation={FadeOut(0.8, 0)}>
+    <div>
+      <ScrollContainer snap="proximity">
+        <ScrollPage>
+          <div
+            style={{
+              flexGrow: 1,
+              background: "black",
+              flexDirection: "column",
+              display: "flex",
+              height: "100%",
+            }}
+          >
             <Welcome />
-          </Animator>
-        </div>
-      </ScrollPage>
-      <ScrollPage>
-        <div
-          style={{
-            background: "yellow",
-            flexGrow: 1,
-            flexDirection: "column",
-            display: "flex",
-            height: "100%",
-          }}
-        >
-          <Animator animation={FadeUp}>
+          </div>
+        </ScrollPage>
+        <ScrollPage>
+          <div
+            style={{
+              background: "black",
+              flexGrow: 1,
+              flexDirection: "column",
+              display: "flex",
+              height: "100%",
+            }}
+          >
             <AboutMe />
-          </Animator>
-        </div>
-      </ScrollPage>
-      <ScrollPage>
-        <div style={{ background: "green", width: "100%", height: "100%" }}>
-          <Animator animation={ZoomInScrollOut}>
+          </div>
+        </ScrollPage>
+        <ScrollPage>
+          <div
+            style={{
+              background: "black",
+              flexGrow: 1,
+              flexDirection: "column",
+              display: "flex",
+              height: "100%",
+            }}
+          >
             <Projects />
-          </Animator>
-        </div>
-      </ScrollPage>
-      <ScrollPage>
-        <div
-          ref={scrollRef}
-          style={{ background: "gray", width: "100%", height: "100%" }}
-        >
-          <Animator animation={ZoomInScrollOut}>
-            <Projects />
-          </Animator>
-        </div>
-      </ScrollPage>
-    </ScrollContainer>
+          </div>
+        </ScrollPage>
+      </ScrollContainer>
+    </div>
   );
 }
 
