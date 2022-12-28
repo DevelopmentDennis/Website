@@ -61,7 +61,7 @@ const AboutMe: FunctionComponent<AboutMeProps> = () => {
             }}
           >
             <ul>
-              <li>React (Native)</li>
+              <li>React & React Native</li>
               <li>TypeScript</li>
               <li>Node.js</li>
             </ul>
@@ -69,6 +69,7 @@ const AboutMe: FunctionComponent<AboutMeProps> = () => {
               <li>C#</li>
               <li>Entity Framework Core</li>
               <li>Blazor</li>
+              <li>Azure DevOps</li>
             </ul>
           </div>
         </div>

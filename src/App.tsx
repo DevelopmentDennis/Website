@@ -21,6 +21,7 @@ import Welcome from "./Components/Welcome/Welcome";
 import AboutMe from "./Components/AboutMe/AboutMe";
 import Projects from "./Components/Projects/Projects";
 import "./App.css";
+import RecentWork from "./Components/RecentWork/RecentWork";
 
 function App() {
   const ZoomInScrollOut = batch(Sticky(), ZoomOut());
@@ -53,6 +54,19 @@ function App() {
             }}
           >
             <AboutMe />
+          </div>
+        </ScrollPage>
+        <ScrollPage>
+          <div
+            style={{
+              background: "black",
+              flexGrow: 1,
+              flexDirection: "column",
+              display: "flex",
+              height: "100%",
+            }}
+          >
+            <RecentWork />
           </div>
         </ScrollPage>
         <ScrollPage>

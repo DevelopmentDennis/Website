@@ -18,7 +18,7 @@ const Welcome: FunctionComponent<WelcomeProps> = () => {
       );
     },
     () => true
-  ); // this line prevent re rendering
+  );
 
   // Todo Github, Xing, LinkedIn, Insta
   return (
@@ -31,7 +31,9 @@ const Welcome: FunctionComponent<WelcomeProps> = () => {
         alignItems: "center",
       }}
     >
-      <p className="heading-white">Hi</p>
+      <p className="heading-white">
+        <b>Hi</b>
+      </p>
       <p className="text-white"> My name is Dennis Ostertag</p>
       <p className="text-white">
         Im a <TypingAnimation /> developer
