@@ -12,6 +12,18 @@ code {
     monospace;
 }
 
+.heading-white {
+  color: whitesmoke;
+  font-family: PoppinsRegular;
+  font-size: 3em;
+}
+
+.text-white {
+  color: whitesmoke;
+  font-family: PoppinsRegular;
+  font-size: 2em;
+}
+
 @font-face {
   font-family: "PoppinsRegular";
   src: local("PoppinsRegular"),

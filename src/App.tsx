@@ -29,7 +29,7 @@ function App() {
 
   return (
     <div>
-      <ScrollContainer snap="proximity">
+      <ScrollContainer snap="mandatory">
         <ScrollPage>
           <div
             style={{

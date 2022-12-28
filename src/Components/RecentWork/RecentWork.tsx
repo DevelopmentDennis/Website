@@ -23,6 +23,7 @@ const RecentWork: FunctionComponent<RecentWorkProps> = () => {
         alignItems: "center",
       }}
     >
+      <p className="heading-white">Where i worked</p>
       <VerticalTimeline>
         <VerticalTimelineElement
           className="vertical-timeline-element"

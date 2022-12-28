@@ -1,7 +1,7 @@
 import * as React from "react";
 import { FunctionComponent } from "react";
 import { Animator, MoveIn } from "react-scroll-motion";
-import profileImage from "../../images/Profile.jpg";
+import profileImage from "../../_Images/Profile.jpg";
 import "./AboutMe.css";
 
 interface AboutMeProps {}

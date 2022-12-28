@@ -2,7 +2,7 @@ import * as React from "react";
 import { FunctionComponent } from "react";
 import Typical from "react-typical";
 import "./Welcome.css";
-import profilePicture from "../../images/developer_board.svg";
+import profilePicture from "../../_Images/developer_board.svg";
 
 interface WelcomeProps {}
 
