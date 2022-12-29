@@ -1,11 +1,7 @@
-.heading-white {
-  color: whitesmoke;
-  font-family: PoppinsRegular;
-  font-size: 5em;
+.name {
+  font-size: 4em;
 }
 
-.text-white {
-  color: whitesmoke;
-  font-family: PoppinsRegular;
-  font-size: 3em;
+.icon:hover {
+  opacity: 50%;
 }

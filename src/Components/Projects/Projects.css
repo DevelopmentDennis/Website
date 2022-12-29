@@ -1,15 +1,3 @@
-.heading-white {
-  color: whitesmoke;
-  font-family: PoppinsRegular;
-  font-size: 3em;
-}
-
-.text-white {
-  color: whitesmoke;
-  font-family: PoppinsRegular;
-  font-size: 2em;
-}
-
 .carousel-inner {
   display: flex;
   flex-direction: row;
@@ -17,4 +5,8 @@
   align-items: center;
   width: 100%;
   height: inherit;
+}
+
+.text-left {
+  text-align: left;
 }

@@ -26,7 +26,7 @@ const RecentWork: FunctionComponent<RecentWorkProps> = () => {
       <p className="heading-white">Where i worked</p>
       <VerticalTimeline>
         <VerticalTimelineElement
-          className="vertical-timeline-element"
+          className="vertical-timeline-element text-poppins"
           date="July 2019 - present"
           dateClassName="text-white"
           iconStyle={{ background: "yellowgreen" }}
@@ -44,7 +44,7 @@ const RecentWork: FunctionComponent<RecentWorkProps> = () => {
           </p>
         </VerticalTimelineElement>
         <VerticalTimelineElement
-          className="vertical-timeline-element--work"
+          className="vertical-timeline-element text-poppins"
           date="Jan 2018 - June 2019"
           dateClassName="text-white"
           iconStyle={{ background: "yellowgreen" }}
@@ -58,7 +58,7 @@ const RecentWork: FunctionComponent<RecentWorkProps> = () => {
           </p>
         </VerticalTimelineElement>
         <VerticalTimelineElement
-          className="vertical-timeline-element--work"
+          className="vertical-timeline-element text-poppins"
           date="Mar 2017 - July 2017"
           dateClassName="text-white"
           iconStyle={{ background: "yellowgreen" }}
@@ -69,7 +69,7 @@ const RecentWork: FunctionComponent<RecentWorkProps> = () => {
           <p>Development of drivers and virtualization for linux systems</p>
         </VerticalTimelineElement>
         <VerticalTimelineElement
-          className="vertical-timeline-element--work"
+          className="vertical-timeline-element text-poppins"
           date="2014 - 2019"
           dateClassName="text-white"
           iconStyle={{ background: "yellowgreen" }}

@@ -3,6 +3,9 @@ import { FunctionComponent } from "react";
 import Typical from "react-typical";
 import "./Welcome.css";
 import profilePicture from "../../_Images/developer_board.svg";
+import GithubIcon from "../_Icons/GithubIcon";
+import XingIcon from "../_Icons/XingIcon";
+import LinkedinIcon from "../_Icons/LinkedInIcon";
 
 interface WelcomeProps {}
 
@@ -26,24 +29,60 @@ const Welcome: FunctionComponent<WelcomeProps> = () => {
       style={{
         display: "flex",
         height: "inherit",
-        flexDirection: "column",
+
+        flexDirection: "row",
         justifyContent: "center",
         alignItems: "center",
       }}
     >
-      <p className="heading-white">
-        <b>Hi</b>
-      </p>
-      <p className="text-white"> My name is Dennis Ostertag</p>
-      <p className="text-white">
-        Im a <TypingAnimation /> developer
-      </p>
-
-      <img
-        style={{ borderRadius: "10%" }}
-        src={profilePicture}
-        alt="Profile"
-      ></img>
+      <div
+        style={{
+          display: "flex",
+          flexDirection: "column",
+          flex: 5,
+          alignItems: "center",
+        }}
+      >
+        <div>
+          <p className="text-white" style={{ marginBottom: 0 }}>
+            Hi, my name is
+          </p>
+          <p className="heading-white name" style={{ marginTop: 0 }}>
+            Dennis Ostertag
+          </p>
+          <p className="text-white">
+            Im a <TypingAnimation /> developer
+          </p>
+        </div>
+      </div>
+      <div
+        style={{
+          flex: 0,
+          flexDirection: "column",
+        }}
+      >
+        <a
+          className="icon"
+          style={{ margin: 10 }}
+          href="https://github.com/DevelopmentDennis"
+        >
+          <GithubIcon size="40" color="white" />
+        </a>
+        <a
+          className="icon"
+          style={{ margin: 10 }}
+          href="https://www.xing.com/profile/Dennis_Ostertag"
+        >
+          <XingIcon size="40" color="white" />
+        </a>
+        <a
+          className="icon"
+          style={{ margin: 10 }}
+          href="https://www.linkedin.com/in/dennis-ostertag-2a0773204/"
+        >
+          <LinkedinIcon size="40" color="white" />
+        </a>
+      </div>
     </div>
   );
 };

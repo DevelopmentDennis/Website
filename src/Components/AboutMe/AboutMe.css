@@ -5,21 +5,9 @@
   overflow: hidden;
 }
 
-.heading-white {
-  color: whitesmoke;
-  font-family: PoppinsRegular;
-  font-size: 3em;
-}
-
-.text-white {
-  color: whitesmoke;
-  font-family: PoppinsRegular;
-  font-size: 2em;
-}
-
 li {
   color: whitesmoke;
-  font-family: PoppinsRegular;
+  font-family: Poppins;
   font-size: 2em;
 }
 
