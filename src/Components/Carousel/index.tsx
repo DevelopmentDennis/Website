@@ -1,7 +1,5 @@
-import { Console } from "console";
 import * as React from "react";
-import { FunctionComponent, useState, useEffect } from "react";
-import { CSSTransition, TransitionGroup } from "react-transition-group";
+import { FunctionComponent, useState } from "react";
 import ChevronLeftIcon from "../_Icons/ChevronLeftIcon";
 import ChevronRightIcon from "../_Icons/ChevronRightIcon";
 import "./styles.css";
@@ -69,7 +67,7 @@ const Carousel: FunctionComponent<CarouselProps> = (props) => {
             key={index}
             className="text-white"
             style={{
-              color: index == currentElement ? "yellowgreen" : "",
+              color: index === currentElement ? "yellowgreen" : "",
               marginLeft: "2%",
               marginRight: "2%",
             }}

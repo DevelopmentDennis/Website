@@ -1,22 +1,6 @@
-import React, { useRef } from "react";
-import logo from "./logo.svg";
+import React from "react";
 import "./App.css";
-import {
-  Animator,
-  ScrollContainer,
-  ScrollPage,
-  batch,
-  Fade,
-  FadeIn,
-  Move,
-  MoveIn,
-  MoveOut,
-  Sticky,
-  StickyIn,
-  ZoomIn,
-  ZoomOut,
-  FadeOut,
-} from "react-scroll-motion";
+import { ScrollContainer, ScrollPage } from "react-scroll-motion";
 import Welcome from "./Components/Welcome/Welcome";
 import AboutMe from "./Components/AboutMe/AboutMe";
 import Projects from "./Components/Projects/Projects";
@@ -24,9 +8,6 @@ import "./App.css";
 import RecentWork from "./Components/RecentWork/RecentWork";
 
 function App() {
-  const ZoomInScrollOut = batch(Sticky(), ZoomOut());
-  const FadeUp = batch(MoveIn(-1000, 0));
-
   return (
     <div>
       <ScrollContainer snap="mandatory">

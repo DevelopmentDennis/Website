@@ -2,7 +2,6 @@ import * as React from "react";
 import { FunctionComponent } from "react";
 import Typical from "react-typical";
 import "./Welcome.css";
-import profilePicture from "../../_Images/developer_board.svg";
 import GithubIcon from "../_Icons/GithubIcon";
 import XingIcon from "../_Icons/XingIcon";
 import LinkedinIcon from "../_Icons/LinkedInIcon";

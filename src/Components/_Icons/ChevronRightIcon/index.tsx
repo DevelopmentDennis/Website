@@ -1,11 +1,13 @@
 import * as React from "react";
 
-export interface ChevronRightIcon {
+interface ChevronRightIconProps {
   color: string;
   size?: string;
 }
 
-const ChevronRightIcon: React.FunctionComponent<ChevronRightIcon> = (props) => {
+const ChevronRightIcon: React.FunctionComponent<ChevronRightIconProps> = (
+  props
+) => {
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"
