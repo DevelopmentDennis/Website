@@ -8,12 +8,12 @@ interface ProjectsProps {}
 const Projects: FunctionComponent<ProjectsProps> = () => {
   const items: CarouselItem[] = [
     {
-      title: "Loyalty program app for a german super marked chain",
+      title: "Loyalty program app for a german supermarket chain",
       subtitle: "Work project",
-      children: (
+      child: (
         <p className="text-white text-left">
           Worked on the development of a loyalty program, including a
-          microservice backened architecture hosted on Microsoft Azure, using
+          microservice backend architecture hosted on Microsoft Azure, using
           lots of different Azure Services. My main part was the development of
           the corresponding React Native mobile app.
         </p>
@@ -22,7 +22,7 @@ const Projects: FunctionComponent<ProjectsProps> = () => {
     {
       title: "React Native App for tracking expenses",
       subtitle: "Private project",
-      children: (
+      child: (
         <p className="text-white text-left">
           To not loose count of the expenses on food, rent etc, I developed my
           own app for visualisation of those. It is available on the Google Play
@@ -33,7 +33,7 @@ const Projects: FunctionComponent<ProjectsProps> = () => {
     {
       title: "Tracking of changes for certain places on Google Maps",
       subtitle: "Private project",
-      children: (
+      child: (
         <p className="text-white text-left">
           Application that checks Google Places API on a regular schedule and
           notifys me about changes to the given place. Written in C# using Azure
@@ -44,11 +44,20 @@ const Projects: FunctionComponent<ProjectsProps> = () => {
     {
       title: "Blazor Desktop Business Application",
       subtitle: "Work project",
-      children: (
+      child: (
         <p className="text-white text-left">
           To match certain legal requirements i worked on a small team to
           develop a Blazor Application and Backend to make it easier for small
           companies to create the documents needed.
+        </p>
+      ),
+    },
+    {
+      title: "Personal Website",
+      subtitle: "Private project",
+      child: (
+        <p className="text-white text-left">
+          Working on the website you are currently visiting, using React.
         </p>
       ),
     },

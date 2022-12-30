@@ -53,7 +53,7 @@ const RecentWork: FunctionComponent<RecentWorkProps> = () => {
           <h3 className="vertical-timeline-element-title">Working Student</h3>
           <h4 className="vertical-timeline-element-subtitle">KUKA Robotics</h4>
           <p>
-            Software Development of support applications, Endurance tests for
+            Software Development of support applications, endurance tests for
             robots
           </p>
         </VerticalTimelineElement>
