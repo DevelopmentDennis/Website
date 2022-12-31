@@ -7,7 +7,7 @@ import "./styles.css";
 export interface CarouselItem {
   title: string;
   subtitle?: string;
-  children: JSX.Element;
+  child: JSX.Element;
 }
 
 interface CarouselProps {
@@ -47,7 +47,7 @@ const Carousel: FunctionComponent<CarouselProps> = (props) => {
         {props.data[currentElement].subtitle == null ? null : (
           <p className="text-white">{props.data[currentElement].subtitle}</p>
         )}
-        {props.data[currentElement].children}
+        {props.data[currentElement].child}
       </div>
 
       <div className="grid-centered" onClick={moveRight}>
