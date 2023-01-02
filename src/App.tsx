@@ -61,6 +61,19 @@ function App() {
             }}
           >
             <Projects />
+            <a
+              style={{
+                position: "absolute",
+                bottom: "0",
+                right: "15px",
+                fontSize: "1em",
+              }}
+              className="text-white"
+              href="/Privacy.html"
+              target="_blank"
+            >
+              Datenschutzerklärung
+            </a>
           </div>
         </ScrollPage>
       </ScrollContainer>
