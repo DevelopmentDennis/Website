@@ -1,12 +1,16 @@
-.carousel-inner {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
+.grid-centered {
   align-items: center;
-  width: 100%;
-  height: inherit;
+  justify-content: center;
+  display: inline-flex;
+  flex-direction: column;
 }
 
-.text-left {
-  text-align: left;
+.w-80 {
+  width: 80%;
+}
+
+.carousel-root {
+  display: flex;
+  flex-grow: 1;
+  align-items: center;
 }
