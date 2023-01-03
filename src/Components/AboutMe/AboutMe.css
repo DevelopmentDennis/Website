@@ -5,17 +5,17 @@
   overflow: hidden;
 }
 
-li {
+li.dots {
   color: whitesmoke;
   font-family: Poppins;
   font-size: 2em;
 }
 
-ul {
+ul .dots {
   list-style: none; /* Remove default bullets */
 }
 
-ul li::before {
+ul li.dots::before {
   content: "\2022"; /* Add content: \2022 is the CSS Code/unicode for a bullet */
   color: greenyellow; /* Change the color */
   font-weight: bolder; /* If you want it to be bold */

@@ -1,6 +1,6 @@
 import * as React from "react";
 import { FunctionComponent } from "react";
-import { Animator, MoveIn } from "react-scroll-motion";
+import { Animator, batch, MoveIn, MoveOut } from "react-scroll-motion";
 import profileImage from "../../_Images/Profile.jpg";
 import "./AboutMe.css";
 
@@ -41,9 +41,9 @@ const AboutMe: FunctionComponent<AboutMeProps> = () => {
       </div>
 
       <div />
-      <Animator animation={MoveIn(1000, 0)}>
+      <Animator animation={batch(MoveIn(1000, 100), MoveOut(1000, 100))}>
         <div>
-          <p className="heading-white">About me</p>
+          <p className="heading-white">1. About me</p>
           <p className="text-white">
             Hello! My name is Dennis and i am a software developer from Germany.
             I started coding back in school and decided, that's what i want to
@@ -60,16 +60,16 @@ const AboutMe: FunctionComponent<AboutMeProps> = () => {
               justifyContent: "space-around",
             }}
           >
-            <ul>
-              <li>React & React Native</li>
-              <li>TypeScript</li>
-              <li>Node.js</li>
+            <ul className="dots">
+              <li className="dots">React & React Native</li>
+              <li className="dots">TypeScript</li>
+              <li className="dots">Node.js</li>
             </ul>
-            <ul>
-              <li>C#</li>
-              <li>Entity Framework Core</li>
-              <li>Blazor</li>
-              <li>Azure DevOps</li>
+            <ul className="dots">
+              <li className="dots">C#</li>
+              <li className="dots">Entity Framework Core</li>
+              <li className="dots">Blazor</li>
+              <li className="dots">Azure DevOps</li>
             </ul>
           </div>
         </div>
