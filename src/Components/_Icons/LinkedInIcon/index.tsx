@@ -1,15 +1,14 @@
 import * as React from "react";
+import { BaseIconProps } from "../Shared/SharedData";
 
-interface LinkedinIconProps {
-  color: string;
-  size?: string;
-}
+interface LinkedinIconProps extends BaseIconProps {}
 
 const LinkedinIcon: React.FunctionComponent<LinkedinIconProps> = (props) => {
   return (
     <svg
       width={props.size ?? "97"}
       height={props.size ?? "97"}
+      style={props.style}
       viewBox="0 0 448 512"
       xmlns="http://www.w3.org/2000/svg"
     >

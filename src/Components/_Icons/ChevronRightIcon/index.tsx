@@ -1,9 +1,7 @@
 import * as React from "react";
+import { BaseIconProps } from "../Shared/SharedData";
 
-interface ChevronRightIconProps {
-  color: string;
-  size?: string;
-}
+interface ChevronRightIconProps extends BaseIconProps {}
 
 const ChevronRightIcon: React.FunctionComponent<ChevronRightIconProps> = (
   props
@@ -13,6 +11,7 @@ const ChevronRightIcon: React.FunctionComponent<ChevronRightIconProps> = (
       xmlns="http://www.w3.org/2000/svg"
       height={props.size ?? "24"}
       width={props.size ?? "24"}
+      style={props.style}
       viewBox="0 0 24 24"
     >
       <g fill={props.color}>

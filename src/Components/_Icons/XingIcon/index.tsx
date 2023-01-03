@@ -1,15 +1,14 @@
 import * as React from "react";
+import { BaseIconProps } from "../Shared/SharedData";
 
-export interface XingIconProps {
-  color: string;
-  size?: string;
-}
+export interface XingIconProps extends BaseIconProps {}
 
 const XingIcon: React.FunctionComponent<XingIconProps> = (props) => {
   return (
     <svg
       width={props.size ?? "97"}
       height={props.size ?? "97"}
+      style={props.style}
       viewBox="0 0 384 512"
       xmlns="http://www.w3.org/2000/svg"
     >

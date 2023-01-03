@@ -1,9 +1,7 @@
 import * as React from "react";
+import { BaseIconProps } from "../Shared/SharedData";
 
-interface SchoolIconProps {
-  color: string;
-  size?: string;
-}
+interface SchoolIconProps extends BaseIconProps {}
 
 const SchoolIcon: React.FunctionComponent<SchoolIconProps> = (props) => {
   return (
@@ -11,6 +9,7 @@ const SchoolIcon: React.FunctionComponent<SchoolIconProps> = (props) => {
       xmlns="http://www.w3.org/2000/svg"
       height={props.size ?? "24"}
       width={props.size ?? "24"}
+      style={props.style}
       viewBox="0 0 24 24"
     >
       <g fill={props.color}>

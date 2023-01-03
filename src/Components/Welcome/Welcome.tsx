@@ -57,26 +57,22 @@ const Welcome: FunctionComponent<WelcomeProps> = () => {
       <div
         style={{
           flex: 0,
+          marginRight: 15,
           flexDirection: "column",
         }}
       >
-        <a
-          className="icon"
-          style={{ margin: 10 }}
-          href="https://github.com/DevelopmentDennis"
-        >
+        <a className="icon" href="https://github.com/DevelopmentDennis">
           <GithubIcon size="40" color="white" />
         </a>
-        <a
-          className="icon"
-          style={{ margin: 10 }}
-          href="https://www.xing.com/profile/Dennis_Ostertag"
-        >
-          <XingIcon size="40" color="white" />
+        <a className="icon" href="https://www.xing.com/profile/Dennis_Ostertag">
+          <XingIcon
+            size="40"
+            color="white"
+            style={{ marginBottom: 15, marginTop: 15 }}
+          />
         </a>
         <a
           className="icon"
-          style={{ margin: 10 }}
           href="https://www.linkedin.com/in/dennis-ostertag-2a0773204/"
         >
           <LinkedinIcon size="40" color="white" />

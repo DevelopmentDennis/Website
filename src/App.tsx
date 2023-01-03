@@ -10,7 +10,7 @@ import RecentWork from "./Components/RecentWork/RecentWork";
 function App() {
   return (
     <div>
-      <ScrollContainer snap="mandatory">
+      <ScrollContainer snap="proximity">
         <ScrollPage>
           <div
             style={{
