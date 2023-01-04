@@ -23,6 +23,10 @@ body {
   font-family: Poppins;
 }
 
+.text-italic {
+  font-style: italic;
+}
+
 .text-bold {
   font-weight: bold;
 }
@@ -38,4 +42,12 @@ body {
   font-family: "Poppins";
   src: local("PoppinsBold"), url("../fonts/Poppins-Bold.ttf") format("truetype");
   font-weight: bold;
+}
+
+@font-face {
+  font-family: "Poppins";
+  src: local("PoppinsItalic"),
+    url("../fonts/Poppins-Italic.ttf") format("truetype");
+  font-weight: normal;
+  font-style: italic;
 }

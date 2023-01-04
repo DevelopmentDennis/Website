@@ -5,6 +5,7 @@ import "react-responsive-carousel/lib/styles/carousel.min.css";
 import { Carousel } from "react-responsive-carousel";
 import ChevronRightIcon from "../_Icons/ChevronRightIcon";
 import ChevronLeftIcon from "../_Icons/ChevronLeftIcon";
+import GithubIcon from "../_Icons/GithubIcon";
 
 interface ProjectsProps {}
 
@@ -76,10 +77,23 @@ const Projects: FunctionComponent<ProjectsProps> = () => {
         }}
       >
         <div className="grid-centered">
-          <p className="heading-white w-80">
+          <p className="heading-white text-underlined w-80">
             Tracking of changes for certain places on Google Maps
           </p>
-          <p className="text-white w-80">Private project</p>
+          <p className="text-white text-italic w-80">
+            Private project -{" "}
+            <a
+              style={{ color: "greenyellow", display: "inline-flex" }}
+              href="https://github.com/DevelopmentDennis/GooglePlayground"
+            >
+              View on Github
+              <GithubIcon
+                size="45"
+                color="greenyellow"
+                style={{ marginLeft: "5px" }}
+              />
+            </a>
+          </p>
           <p className="text-white w-80">
             Application that checks Google Places API on a regular schedule and
             notifys me about changes to the given place. Written in C# using
@@ -93,10 +107,10 @@ const Projects: FunctionComponent<ProjectsProps> = () => {
           <br />
         </div>
         <div className="grid-centered">
-          <p className="heading-white w-80">
+          <p className="heading-white text-underlined w-80">
             Loyalty program for a german supermarket chain
           </p>
-          <p className="text-white w-80">Work project</p>
+          <p className="text-white text-italic w-80">Work project</p>
           <p className="text-white w-80">
             Worked on the development of a loyalty program, including a
             microservice backend architecture hosted on Microsoft Azure, using
@@ -105,10 +119,23 @@ const Projects: FunctionComponent<ProjectsProps> = () => {
           </p>
         </div>
         <div className="grid-centered">
-          <p className="heading-white w-80">
+          <p className="heading-white text-underlined w-80">
             React Native App for tracking expenses
           </p>
-          <p className="text-white w-80">Private project</p>
+          <p className="text-white text-italic w-80">
+            Private project -{" "}
+            <a
+              style={{ color: "greenyellow", display: "inline-flex" }}
+              href="https://github.com/DevelopmentDennis/HouseholdCostTracker"
+            >
+              View on Github
+              <GithubIcon
+                size="45"
+                color="greenyellow"
+                style={{ marginLeft: "5px" }}
+              />
+            </a>
+          </p>
           <p className="text-white w-80">
             To not loose count of the expenses on food, rent etc, I developed my
             own app for visualisation of those. It is available on the Google
@@ -117,10 +144,10 @@ const Projects: FunctionComponent<ProjectsProps> = () => {
         </div>
 
         <div className="grid-centered">
-          <p className="heading-white w-80">
+          <p className="heading-white text-underlined w-80">
             Blazor Desktop Business Application
           </p>
-          <p className="text-white w-80">Work project</p>
+          <p className="text-white text-italic w-80">Work project</p>
           <p className="text-white w-80">
             To match certain legal requirements i worked on a small team to
             develop a Blazor Application and Backend to make it easier for small
@@ -129,7 +156,20 @@ const Projects: FunctionComponent<ProjectsProps> = () => {
         </div>
         <div className="grid-centered">
           <p className="heading-white w-80">Personal Website</p>
-          <p className="text-white w-80">Private project</p>
+          <p className="text-white text-italic w-80">
+            Private project -{" "}
+            <a
+              style={{ color: "greenyellow", display: "inline-flex" }}
+              href="https://github.com/DevelopmentDennis/Website"
+            >
+              View on Github
+              <GithubIcon
+                size="45"
+                color="greenyellow"
+                style={{ marginLeft: "5px" }}
+              />
+            </a>
+          </p>
           <p className="text-white w-80">
             Working on the website you are currently visiting, using React and
             GitHub Actions for deploy at Microsoft Azure.
