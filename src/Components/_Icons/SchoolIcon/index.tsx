@@ -10,6 +10,7 @@ const SchoolIcon: React.FunctionComponent<SchoolIconProps> = (props) => {
       height={props.size ?? "24"}
       width={props.size ?? "24"}
       style={props.style}
+      className={props.className}
       viewBox="0 0 24 24"
     >
       <g fill={props.color}>

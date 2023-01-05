@@ -9,6 +9,7 @@ const LinkedinIcon: React.FunctionComponent<LinkedinIconProps> = (props) => {
       width={props.size ?? "97"}
       height={props.size ?? "97"}
       style={props.style}
+      className={props.className}
       viewBox="0 0 448 512"
       xmlns="http://www.w3.org/2000/svg"
     >
