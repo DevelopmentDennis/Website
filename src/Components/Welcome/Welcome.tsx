@@ -22,26 +22,9 @@ const Welcome: FunctionComponent<WelcomeProps> = () => {
     () => true
   );
 
-  // Todo Github, Xing, LinkedIn, Insta
   return (
-    <div
-      style={{
-        display: "flex",
-        height: "inherit",
-
-        flexDirection: "row",
-        justifyContent: "center",
-        alignItems: "center",
-      }}
-    >
-      <div
-        style={{
-          display: "flex",
-          flexDirection: "column",
-          flex: 5,
-          alignItems: "center",
-        }}
-      >
+    <div className="welcome-container">
+      <div className="welcome-text-container">
         <div>
           <p className="text-white" style={{ marginBottom: 0 }}>
             Hi, my name is
@@ -54,28 +37,22 @@ const Welcome: FunctionComponent<WelcomeProps> = () => {
           </p>
         </div>
       </div>
-      <div
-        style={{
-          flex: 0,
-          marginRight: 15,
-          flexDirection: "column",
-        }}
-      >
+      <div className="welcome-icons-container">
         <a className="icon" href="https://github.com/DevelopmentDennis">
-          <GithubIcon size="40" color="white" />
+          <GithubIcon size="40" color="whitesmoke" />
         </a>
         <a className="icon" href="https://www.xing.com/profile/Dennis_Ostertag">
           <XingIcon
             size="40"
-            color="white"
-            style={{ marginBottom: 15, marginTop: 15 }}
+            color="whitesmoke"
+            className="welcome-middle-icon"
           />
         </a>
         <a
           className="icon"
           href="https://www.linkedin.com/in/dennis-ostertag-2a0773204/"
         >
-          <LinkedinIcon size="40" color="white" />
+          <LinkedinIcon size="40" color="whitesmoke" />
         </a>
       </div>
     </div>

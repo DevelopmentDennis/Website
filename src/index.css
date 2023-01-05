@@ -9,26 +9,44 @@ body {
   color: whitesmoke;
   font-family: Poppins;
   font-weight: normal;
-  font-size: 3em;
 }
 
 .text-white {
   color: whitesmoke;
   font-family: Poppins;
   font-weight: normal;
-  font-size: 2em;
 }
 
 .text-poppins {
   font-family: Poppins;
 }
 
-.text-italic {
-  font-style: italic;
-}
-
 .text-bold {
   font-weight: bold;
+}
+
+.w-80 {
+  width: 80%;
+}
+
+/* Small Screen*/
+@media screen and (max-width: 39.9375em) {
+  .heading-white {
+    font-size: 2em;
+  }
+  .text-white {
+    font-size: 1.5em;
+  }
+}
+
+/* Medium and up */
+@media screen and (min-width: 40em) {
+  .heading-white {
+    font-size: 3em;
+  }
+  .text-white {
+    font-size: 2em;
+  }
 }
 
 @font-face {

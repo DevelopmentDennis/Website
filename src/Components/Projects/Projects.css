@@ -5,16 +5,42 @@
   flex-direction: column;
 }
 
-.w-80 {
-  width: 80%;
-}
-
 .carousel-root {
   display: flex;
   flex-grow: 1;
   align-items: center;
 }
 
-.text-underlined {
-  text-decoration: underline;
+.projects-indicator-dot {
+  font-size: 1.5em;
+}
+
+/* Small Screen */
+@media screen and (max-width: 39.9375em) {
+  .projects-subtitle {
+    display: none;
+  }
+  .projects-title {
+    text-decoration: underline;
+    font-size: 1.5em;
+  }
+  .projects-text {
+    font-size: 1.2em;
+  }
+  .projects-indicator-dot {
+    font-size: 0.75em;
+  }
+}
+
+/* Medium and up */
+@media screen and (min-width: 40em) {
+  .projects-subtitle {
+    font-style: italic;
+  }
+  .projects-title {
+    text-decoration: underline;
+  }
+  .projects-indicator-dot {
+    font-size: 1.5em;
+  }
 }

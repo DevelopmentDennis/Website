@@ -11,6 +11,8 @@ import SchoolIcon from "../_Icons/SchoolIcon";
 
 interface RecentWorkProps {}
 
+// Add mobile layout button on top and bottom and show exactly 2 elements
+
 const RecentWork: FunctionComponent<RecentWorkProps> = () => {
   return (
     <div
@@ -28,7 +30,7 @@ const RecentWork: FunctionComponent<RecentWorkProps> = () => {
         <VerticalTimelineElement
           className="vertical-timeline-element text-poppins"
           date="July 2019 - present"
-          dateClassName="text-white"
+          dateClassName="recentwork-date-text"
           iconStyle={{ background: "yellowgreen" }}
           icon={<WorkIcon color="whitesmoke" />}
         >
@@ -46,7 +48,7 @@ const RecentWork: FunctionComponent<RecentWorkProps> = () => {
         <VerticalTimelineElement
           className="vertical-timeline-element text-poppins"
           date="Jan 2018 - June 2019"
-          dateClassName="text-white"
+          dateClassName="recentwork-date-text"
           iconStyle={{ background: "yellowgreen" }}
           icon={<WorkIcon color="whitesmoke" />}
         >
@@ -60,7 +62,7 @@ const RecentWork: FunctionComponent<RecentWorkProps> = () => {
         <VerticalTimelineElement
           className="vertical-timeline-element text-poppins"
           date="Mar 2017 - July 2017"
-          dateClassName="text-white"
+          dateClassName="recentwork-date-text"
           iconStyle={{ background: "yellowgreen" }}
           icon={<WorkIcon color="whitesmoke" />}
         >
@@ -71,7 +73,7 @@ const RecentWork: FunctionComponent<RecentWorkProps> = () => {
         <VerticalTimelineElement
           className="vertical-timeline-element text-poppins"
           date="2014 - 2019"
-          dateClassName="text-white"
+          dateClassName="recentwork-date-text"
           iconStyle={{ background: "yellowgreen" }}
           icon={<SchoolIcon color="whitesmoke" />}
         >

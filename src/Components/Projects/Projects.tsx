@@ -14,7 +14,6 @@ const Projects: FunctionComponent<ProjectsProps> = () => {
     color: "greenyellow",
     display: "inline-block",
     margin: "0 1%",
-    fontSize: "1.5em",
     cursor: "pointer",
   };
 
@@ -24,9 +23,13 @@ const Projects: FunctionComponent<ProjectsProps> = () => {
     top: "calc(50% - 15px)",
   };
 
+  // Hide arrows on mobile and only do 2x br on mobile
   return (
     <>
-      <p className="heading-white" style={{ marginLeft: "5%" }}>
+      <p
+        className="heading-white"
+        style={{ marginLeft: "5%", marginBottom: "2%" }}
+      >
         3. Some of the projects i worked on
       </p>
 
@@ -55,6 +58,7 @@ const Projects: FunctionComponent<ProjectsProps> = () => {
                 style={{ ...indicatorStyles, color: "whitesmoke" }}
                 aria-label={`Selected: ${label} ${index + 1}`}
                 title={`Selected: ${label} ${index + 1}`}
+                className="projects-indicator-dot"
               >
                 ⬤
               </p>
@@ -70,6 +74,7 @@ const Projects: FunctionComponent<ProjectsProps> = () => {
               tabIndex={0}
               title={`${label} ${index + 1}`}
               aria-label={`${label} ${index + 1}`}
+              className="projects-indicator-dot"
             >
               ⬤
             </p>
@@ -77,10 +82,10 @@ const Projects: FunctionComponent<ProjectsProps> = () => {
         }}
       >
         <div className="grid-centered">
-          <p className="heading-white text-underlined w-80">
+          <p className="heading-white projects-title w-80">
             Tracking of changes for certain places on Google Maps
           </p>
-          <p className="text-white text-italic w-80">
+          <p className="text-white projects-subtitle w-80">
             Private project -{" "}
             <a
               style={{ color: "greenyellow", display: "inline-flex" }}
@@ -88,41 +93,39 @@ const Projects: FunctionComponent<ProjectsProps> = () => {
             >
               View on Github
               <GithubIcon
-                size="45"
+                size="1.5em"
                 color="greenyellow"
                 style={{ marginLeft: "5px" }}
               />
             </a>
           </p>
-          <p className="text-white w-80">
-            Application that checks Google Places API on a regular schedule and
-            notifys me about changes to the given place. Written in C# using
-            Azure Functions. Hosted on Microsoft Azure.
+          <p className="text-white w-80 projects-text">
+            Azure Functions .NET Core App that checks Google Places API on a
+            regular schedule and notifys me about changes to the given place.
           </p>
-          <br />
-          <br />
-          <br />
-          <br />
-          <br />
-          <br />
         </div>
         <div className="grid-centered">
-          <p className="heading-white text-underlined w-80">
+          <p className="heading-white projects-title w-80">
             Loyalty program for a german supermarket chain
           </p>
-          <p className="text-white text-italic w-80">Work project</p>
-          <p className="text-white w-80">
-            Worked on the development of a loyalty program, including a
-            microservice backend architecture hosted on Microsoft Azure, using
-            lots of different Azure Services. My main part was the development
-            of the corresponding React Native mobile app.
+          <p className="text-white projects-subtitle w-80">Work project</p>
+          <p className="text-white w-80 projects-text">
+            Azure Functions (and lots of other Azure Services) microservice
+            backend architecture. Frontend website written with React and the
+            corresponding Mobile App with React Native.
           </p>
+          <br />
+          <br />
+          <br />
+          <br />
+          <br />
+          <br />
         </div>
         <div className="grid-centered">
-          <p className="heading-white text-underlined w-80">
+          <p className="heading-white projects-title w-80">
             React Native App for tracking expenses
           </p>
-          <p className="text-white text-italic w-80">
+          <p className="text-white projects-subtitle w-80">
             Private project -{" "}
             <a
               style={{ color: "greenyellow", display: "inline-flex" }}
@@ -130,13 +133,13 @@ const Projects: FunctionComponent<ProjectsProps> = () => {
             >
               View on Github
               <GithubIcon
-                size="45"
+                size="1.5em"
                 color="greenyellow"
                 style={{ marginLeft: "5px" }}
               />
             </a>
           </p>
-          <p className="text-white w-80">
+          <p className="text-white w-80 projects-text">
             To not loose count of the expenses on food, rent etc, I developed my
             own app for visualisation of those. It is available on the Google
             Play Store.
@@ -144,11 +147,11 @@ const Projects: FunctionComponent<ProjectsProps> = () => {
         </div>
 
         <div className="grid-centered">
-          <p className="heading-white text-underlined w-80">
+          <p className="heading-white projects-title w-80">
             Blazor Desktop Business Application
           </p>
-          <p className="text-white text-italic w-80">Work project</p>
-          <p className="text-white w-80">
+          <p className="text-white projects-subtitle w-80">Work project</p>
+          <p className="text-white w-80 projects-text">
             To match certain legal requirements i worked on a small team to
             develop a Blazor Application and Backend to make it easier for small
             companies to create the documents needed.
@@ -156,7 +159,7 @@ const Projects: FunctionComponent<ProjectsProps> = () => {
         </div>
         <div className="grid-centered">
           <p className="heading-white w-80">Personal Website</p>
-          <p className="text-white text-italic w-80">
+          <p className="text-white projects-subtitle w-80">
             Private project -{" "}
             <a
               style={{ color: "greenyellow", display: "inline-flex" }}
@@ -164,13 +167,13 @@ const Projects: FunctionComponent<ProjectsProps> = () => {
             >
               View on Github
               <GithubIcon
-                size="45"
+                size="1.5em"
                 color="greenyellow"
                 style={{ marginLeft: "5px" }}
               />
             </a>
           </p>
-          <p className="text-white w-80">
+          <p className="text-white w-80 projects-text">
             Working on the website you are currently visiting, using React and
             GitHub Actions for deploy at Microsoft Azure.
           </p>

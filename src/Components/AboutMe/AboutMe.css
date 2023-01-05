@@ -8,7 +8,6 @@
 li.dots {
   color: whitesmoke;
   font-family: Poppins;
-  font-size: 2em;
 }
 
 ul .dots {
@@ -19,10 +18,7 @@ ul li.dots::before {
   content: "\2022"; /* Add content: \2022 is the CSS Code/unicode for a bullet */
   color: greenyellow; /* Change the color */
   font-weight: bolder; /* If you want it to be bold */
-  font-size: 1em;
   display: inline-block; /* Needed to add space between the bullet and the text */
-  width: 1em; /* Also needed for space (tweak if needed) */
-  margin-left: -1em; /* Also needed for space (tweak if needed) */
 }
 
 img {
@@ -36,4 +32,29 @@ img:hover {
 .divider {
   border-bottom: 2px solid whitesmoke;
   width: 90%;
+}
+
+/* Small Screen */
+@media screen and (max-width: 39.9375em) {
+  li.dots {
+    font-size: 1.5em;
+  }
+
+  ul li.dots::before {
+    font-size: 0.75em;
+    width: 0.75em;
+    margin-left: -0.75em;
+  }
+}
+
+/* Medium and up */
+@media screen and (min-width: 40em) {
+  li.dots {
+    font-size: 2em;
+  }
+  ul li.dots::before {
+    font-size: 1em;
+    width: 1em;
+    margin-left: -1em; /* Also needed for space (tweak if needed) */
+  }
 }
