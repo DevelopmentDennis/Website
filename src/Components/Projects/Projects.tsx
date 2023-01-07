@@ -6,10 +6,11 @@ import { Carousel } from "react-responsive-carousel";
 import ChevronRightIcon from "../_Icons/ChevronRightIcon";
 import ChevronLeftIcon from "../_Icons/ChevronLeftIcon";
 import GithubIcon from "../_Icons/GithubIcon";
+import { ResponsiveProps } from "../../App";
 
-interface ProjectsProps {}
+interface ProjectsProps extends ResponsiveProps {}
 
-const Projects: FunctionComponent<ProjectsProps> = () => {
+const Projects: FunctionComponent<ProjectsProps> = (props) => {
   const indicatorStyles: React.CSSProperties = {
     color: "greenyellow",
     display: "inline-block",
@@ -36,6 +37,7 @@ const Projects: FunctionComponent<ProjectsProps> = () => {
       <Carousel
         showThumbs={false}
         infiniteLoop
+        showArrows={props.isLargeScreen}
         showStatus={false}
         renderArrowPrev={(onClickHandler, hasPrev, label) =>
           hasPrev && (

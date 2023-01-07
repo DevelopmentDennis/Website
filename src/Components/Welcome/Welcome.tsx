@@ -5,8 +5,9 @@ import "./Welcome.css";
 import GithubIcon from "../_Icons/GithubIcon";
 import XingIcon from "../_Icons/XingIcon";
 import LinkedinIcon from "../_Icons/LinkedInIcon";
+import { ResponsiveProps } from "../../App";
 
-interface WelcomeProps {}
+interface WelcomeProps extends ResponsiveProps {}
 
 const Welcome: FunctionComponent<WelcomeProps> = () => {
   const TypingAnimation = React.memo(

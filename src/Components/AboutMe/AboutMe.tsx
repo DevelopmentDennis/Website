@@ -1,10 +1,11 @@
 import * as React from "react";
 import { FunctionComponent } from "react";
 import { Animator, batch, MoveIn, MoveOut } from "react-scroll-motion";
+import { ResponsiveProps } from "../../App";
 import profileImage from "../../_Images/Profile.jpg";
 import "./AboutMe.css";
 
-interface AboutMeProps {}
+interface AboutMeProps extends ResponsiveProps {}
 
 const AboutMe: FunctionComponent<AboutMeProps> = () => {
   return (
