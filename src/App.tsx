@@ -16,19 +16,8 @@ function App() {
   const [isLargeScreen, SetIsLargeScreen] = useState(true);
 
   useEffect(() => {
-    const handleStatusChange = (e: MediaQueryListEvent) => {
-      SetIsLargeScreen(e.matches);
-    };
-
-    window
-      .matchMedia("(min-width: 40em)")
-      .addEventListener("change", handleStatusChange);
-    return () => {
-      window
-        .matchMedia("(min-width: 40em)")
-        .removeEventListener("change", handleStatusChange);
-    };
-  });
+    SetIsLargeScreen(window.matchMedia("(min-width: 40em)").matches);
+  }, []);
 
   return (
     <ScrollContainer snap="proximity">
@@ -66,7 +55,7 @@ function App() {
             href="/Privacy.html"
             target="_blank"
           >
-            Datenschutzerklärung
+            Privacy Statement
           </a>
         </div>
       </ScrollPage>
