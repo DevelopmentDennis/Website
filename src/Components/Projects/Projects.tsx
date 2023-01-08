@@ -7,6 +7,7 @@ import ChevronRightIcon from "../_Icons/ChevronRightIcon";
 import ChevronLeftIcon from "../_Icons/ChevronLeftIcon";
 import GithubIcon from "../_Icons/GithubIcon";
 import { ResponsiveProps } from "../../App";
+import GooglePlayIcon from "../_Icons/GooglePlayIcon";
 
 interface ProjectsProps extends ResponsiveProps {}
 
@@ -91,6 +92,8 @@ const Projects: FunctionComponent<ProjectsProps> = (props) => {
             Private project -{" "}
             <a
               style={{ color: "greenyellow", display: "inline-flex" }}
+              target="_blank"
+              rel="noreferrer"
               href="https://github.com/DevelopmentDennis/GooglePlayground"
             >
               View on Github
@@ -131,10 +134,26 @@ const Projects: FunctionComponent<ProjectsProps> = (props) => {
             Private project -{" "}
             <a
               style={{ color: "greenyellow", display: "inline-flex" }}
+              target="_blank"
+              rel="noreferrer"
               href="https://github.com/DevelopmentDennis/HouseholdCostTracker"
             >
               View on Github
               <GithubIcon
+                size="1.5em"
+                color="greenyellow"
+                style={{ marginLeft: "5px" }}
+              />
+            </a>{" "}
+            -{" "}
+            <a
+              style={{ color: "greenyellow", display: "inline-flex" }}
+              target="_blank"
+              rel="noreferrer"
+              href="https://play.google.com/store/apps/details?id=com.monthlycosttracker"
+            >
+              View on Google Play
+              <GooglePlayIcon
                 size="1.5em"
                 color="greenyellow"
                 style={{ marginLeft: "5px" }}
@@ -165,6 +184,8 @@ const Projects: FunctionComponent<ProjectsProps> = (props) => {
             Private project -{" "}
             <a
               style={{ color: "greenyellow", display: "inline-flex" }}
+              target="_blank"
+              rel="noreferrer"
               href="https://github.com/DevelopmentDennis/Website"
             >
               View on Github

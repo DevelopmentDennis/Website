@@ -6,6 +6,7 @@ import AboutMe from "./Components/AboutMe/AboutMe";
 import Projects from "./Components/Projects/Projects";
 import "./App.css";
 import RecentWork from "./Components/RecentWork/RecentWork";
+import AboutMeTechnologies from "./Components/AboutMe/AboutMeTechnologies";
 
 export interface ResponsiveProps {
   isLargeScreen: boolean;
@@ -41,6 +42,11 @@ function App() {
           <AboutMe isLargeScreen={isLargeScreen} />
         </div>
       </ScrollPage>
+      {!isLargeScreen && (
+        <ScrollPage className="scrollPage">
+          <AboutMeTechnologies isLargeScreen={isLargeScreen} />
+        </ScrollPage>
+      )}
       <ScrollPage>
         <div className="scrollPage">
           <RecentWork isLargeScreen={isLargeScreen} />

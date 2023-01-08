@@ -25,6 +25,10 @@ body {
   font-weight: bold;
 }
 
+.text-italic {
+  font-style: italic;
+}
+
 .w-80 {
   width: 80%;
 }
