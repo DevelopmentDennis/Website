@@ -33,18 +33,15 @@ body {
   width: 80%;
 }
 
-/* Small Screen*/
-@media screen and (max-width: 39.9375em) {
-  .heading-white {
-    font-size: 2em;
-  }
-  .text-white {
-    font-size: 1.5em;
-  }
+.heading-white {
+  font-size: 2em;
+}
+.text-white {
+  font-size: 1.5em;
 }
 
-/* Medium and up */
-@media screen and (min-width: 40em) {
+/* Large and up */
+@media screen and (min-width: 75em) and (min-height: 60em) {
   .heading-white {
     font-size: 3em;
   }

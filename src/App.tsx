@@ -16,7 +16,7 @@ function App() {
   const [isLargeScreen, SetIsLargeScreen] = useState(true);
 
   useEffect(() => {
-    SetIsLargeScreen(window.matchMedia("(min-width: 40em)").matches);
+    SetIsLargeScreen(window.matchMedia("(min-width: 74em)").matches);
   }, []);
 
   return (

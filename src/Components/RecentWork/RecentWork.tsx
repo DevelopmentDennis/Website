@@ -1,5 +1,5 @@
 import * as React from "react";
-import { FunctionComponent, useState } from "react";
+import { FunctionComponent, useEffect, useState } from "react";
 import "./RecentWork.css";
 import {
   VerticalTimeline,
@@ -15,6 +15,12 @@ interface RecentWorkProps extends ResponsiveProps {}
 
 const RecentWork: FunctionComponent<RecentWorkProps> = (props) => {
   const [currentlyDisplayedElement, SetCurrentlyDisplayedElement] = useState(0);
+
+  const [isSmallHeight, SetIsSmallHeightScreen] = useState(false);
+
+  useEffect(() => {
+    SetIsSmallHeightScreen(window.matchMedia("(max-height: 60em)").matches);
+  }, []);
 
   const timelineElements = [
     <VerticalTimelineElement
@@ -104,18 +110,17 @@ const RecentWork: FunctionComponent<RecentWorkProps> = (props) => {
         alignItems: "center",
       }}
     >
-      <p className="heading-white">2. Where i worked</p>
       <VerticalTimeline>
-        {props.isLargeScreen && timelineElements}
-        {!props.isLargeScreen &&
+        {!isSmallHeight && timelineElements}
+        {isSmallHeight &&
           currentlyDisplayedElement > 0 &&
           GetDisplayMoreIcon("-")}
-        {!props.isLargeScreen &&
+        {isSmallHeight &&
           timelineElements.slice(
             currentlyDisplayedElement,
             currentlyDisplayedElement + 2
           )}
-        {!props.isLargeScreen &&
+        {isSmallHeight &&
           currentlyDisplayedElement + 2 < timelineElements.length &&
           GetDisplayMoreIcon("+")}
       </VerticalTimeline>

@@ -40,11 +40,11 @@ const Welcome: FunctionComponent<WelcomeProps> = () => {
       </div>
       <div className="welcome-icons-container">
         <a className="icon" href="https://github.com/DevelopmentDennis">
-          <GithubIcon size="40" color="whitesmoke" />
+          <GithubIcon size="2.5em" color="whitesmoke" />
         </a>
         <a className="icon" href="https://www.xing.com/profile/Dennis_Ostertag">
           <XingIcon
-            size="40"
+            size="2.5em"
             color="whitesmoke"
             className="welcome-middle-icon"
           />
@@ -53,7 +53,7 @@ const Welcome: FunctionComponent<WelcomeProps> = () => {
           className="icon"
           href="https://www.linkedin.com/in/dennis-ostertag-2a0773204/"
         >
-          <LinkedinIcon size="40" color="whitesmoke" />
+          <LinkedinIcon size="2.5em" color="whitesmoke" />
         </a>
       </div>
     </div>

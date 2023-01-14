@@ -1,16 +1,18 @@
+.recentwork-date-text {
+  font-family: Poppins;
+  font-weight: normal;
+}
+
 /* Small Screen */
-@media screen and (max-width: 39.9375em) {
+@media screen and (max-width: 1169px) {
   .recentwork-date-text {
-    font-family: Poppins;
-    font-weight: normal;
+    color: black;
   }
 }
 
 /* Medium and up */
-@media screen and (min-width: 40em) {
+@media screen and (min-width: 1170px) {
   .recentwork-date-text {
     color: whitesmoke;
-    font-family: Poppins;
-    font-weight: normal;
   }
 }

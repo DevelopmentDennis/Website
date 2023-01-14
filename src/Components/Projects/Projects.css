@@ -11,10 +11,6 @@
   align-items: center;
 }
 
-.projects-indicator-dot {
-  font-size: 1.5em;
-}
-
 /* Small Screen */
 @media screen and (max-width: 39.9375em) {
   .projects-subtitle {
@@ -32,8 +28,24 @@
   }
 }
 
-/* Medium and up */
-@media screen and (min-width: 40em) {
+@media screen and (min-width: 40em) and (max-width: 74.9375em) or (max-height: 60em) {
+  .projects-subtitle {
+    display: none;
+  }
+  .projects-title {
+    text-decoration: underline;
+    font-size: 1.5em;
+  }
+  .projects-text {
+    font-size: 1.2em;
+  }
+  .projects-indicator-dot {
+    font-size: 1em;
+  }
+}
+
+/* Large and up */
+@media screen and (min-width: 75em) {
   .projects-subtitle {
     font-style: italic;
   }
