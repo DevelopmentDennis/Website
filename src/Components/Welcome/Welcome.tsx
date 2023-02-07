@@ -6,6 +6,7 @@ import GithubIcon from "../_Icons/GithubIcon";
 import XingIcon from "../_Icons/XingIcon";
 import LinkedinIcon from "../_Icons/LinkedInIcon";
 import { ResponsiveProps } from "../../App";
+import OctagonIcon from "../_Icons/QuaterOctagonIcon";
 
 interface WelcomeProps extends ResponsiveProps {}
 
@@ -25,6 +26,26 @@ const Welcome: FunctionComponent<WelcomeProps> = () => {
 
   return (
     <div className="welcome-container">
+      <OctagonIcon
+        size="50vh"
+        className="background-icon"
+        viewPortX={8}
+        viewPortY={8}
+        style={{ top: 0, left: 0 }}
+        color="yellowgreen"
+      />
+      <OctagonIcon
+        viewPortX={8}
+        viewPortY={8}
+        size="50vh"
+        className="background-icon"
+        style={{
+          bottom: 0,
+          right: 0,
+          transform: "rotate(180deg)",
+        }}
+        color="yellowgreen"
+      />
       <div className="welcome-text-container">
         <div>
           <p className="text-white" style={{ marginBottom: 0 }}>

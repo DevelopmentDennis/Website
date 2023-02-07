@@ -1,6 +1,7 @@
 import * as React from "react";
 import { Animator, batch, MoveIn, MoveOut } from "react-scroll-motion";
 import { ResponsiveProps } from "../../App";
+import OctagonIcon from "../_Icons/QuaterOctagonIcon";
 
 interface AboutMeTechnologiesProps extends ResponsiveProps {}
 
@@ -30,7 +31,23 @@ const AboutMeTechnologies: React.FunctionComponent<AboutMeTechnologiesProps> = (
   );
 
   return (
-    <div>
+    <div
+      style={{
+        height: "100%",
+      }}
+    >
+      {!props.isLargeScreen && (
+        <OctagonIcon
+          viewPortX={8}
+          viewPortY={0}
+          size="50vh"
+          className="background-icon"
+          style={{
+            left: 0,
+          }}
+          color="yellowgreen"
+        />
+      )}
       {props.isLargeScreen && techList}
       {!props.isLargeScreen && (
         <Animator

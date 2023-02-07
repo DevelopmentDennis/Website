@@ -8,6 +8,7 @@ import ChevronLeftIcon from "../_Icons/ChevronLeftIcon";
 import GithubIcon from "../_Icons/GithubIcon";
 import { ResponsiveProps } from "../../App";
 import GooglePlayIcon from "../_Icons/GooglePlayIcon";
+import OctagonIcon from "../_Icons/QuaterOctagonIcon";
 
 interface ProjectsProps extends ResponsiveProps {}
 
@@ -202,6 +203,18 @@ const Projects: FunctionComponent<ProjectsProps> = (props) => {
           </p>
         </div>
       </Carousel>
+      <OctagonIcon
+        size="50vh"
+        viewPortX={8}
+        viewPortY={8}
+        className="background-icon"
+        style={{
+          bottom: 0,
+          left: 0,
+          transform: "rotate(-90deg)",
+        }}
+        color="yellowgreen"
+      />
     </>
   );
 };

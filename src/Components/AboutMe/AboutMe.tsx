@@ -3,6 +3,7 @@ import { FunctionComponent } from "react";
 import { Animator, batch, MoveIn, MoveOut } from "react-scroll-motion";
 import { ResponsiveProps } from "../../App";
 import profileImage from "../../_Images/Profile.jpg";
+import OctagonIcon from "../_Icons/QuaterOctagonIcon";
 import "./AboutMe.css";
 import AboutMeTechnologies from "./AboutMeTechnologies";
 
@@ -16,6 +17,18 @@ const AboutMe: FunctionComponent<AboutMeProps> = (props) => {
       }}
       className="aboutme-layout"
     >
+      <OctagonIcon
+        viewPortX={8}
+        viewPortY={8}
+        className="background-icon"
+        size="50vh"
+        style={{
+          top: 0,
+          right: 0,
+          transform: "rotate(90deg)",
+        }}
+        color="yellowgreen"
+      />
       <div className="aboutme-img-container">
         <img className="cover-img" src={profileImage} alt="Profile"></img>
       </div>

@@ -10,6 +10,7 @@ import WorkIcon from "../_Icons/WorkIcon";
 import SchoolIcon from "../_Icons/SchoolIcon";
 import IconPlus from "../_Icons/PlusIcon";
 import { ResponsiveProps } from "../../App";
+import OctagonIcon from "../_Icons/QuaterOctagonIcon";
 
 interface RecentWorkProps extends ResponsiveProps {}
 
@@ -110,6 +111,19 @@ const RecentWork: FunctionComponent<RecentWorkProps> = (props) => {
         alignItems: "center",
       }}
     >
+      <OctagonIcon
+        size="50vh"
+        viewPortX={8}
+        viewPortY={0}
+        className="background-icon"
+        style={{
+          right: 0,
+          bottom: 0,
+          transform: "rotate(180deg)",
+        }}
+        color="yellowgreen"
+      />
+
       <VerticalTimeline>
         {!isSmallHeight && timelineElements}
         {isSmallHeight &&
