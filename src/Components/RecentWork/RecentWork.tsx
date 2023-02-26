@@ -123,7 +123,6 @@ const RecentWork: FunctionComponent<RecentWorkProps> = (props) => {
         }}
         color="yellowgreen"
       />
-
       <VerticalTimeline>
         {!isSmallHeight && timelineElements}
         {isSmallHeight &&

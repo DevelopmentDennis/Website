@@ -1,6 +1,6 @@
 import * as React from "react";
 import { FunctionComponent } from "react";
-import { Animator, batch, MoveIn, MoveOut } from "react-scroll-motion";
+import { Animator, Fade } from "react-scroll-motion";
 import { ResponsiveProps } from "../../App";
 import profileImage from "../../_Images/Profile.jpg";
 import OctagonIcon from "../_Icons/QuaterOctagonIcon";
@@ -30,10 +30,12 @@ const AboutMe: FunctionComponent<AboutMeProps> = (props) => {
         color="yellowgreen"
       />
       <div className="aboutme-img-container">
-        <img className="cover-img" src={profileImage} alt="Profile"></img>
+        <div className="aboutme-round-corners">
+          <img className="cover-img" src={profileImage} alt="Profile"></img>
+        </div>
       </div>
       <div className="aboutme-text-container">
-        <Animator animation={batch(MoveIn(1000, 100), MoveOut(1000, 100))}>
+        <Animator animation={Fade()}>
           <div>
             <p className="heading-white aboutme-title">1. About me</p>
             <p className="text-white aboutme-text">

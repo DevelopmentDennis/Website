@@ -1,5 +1,5 @@
 import * as React from "react";
-import { Animator, batch, MoveIn, MoveOut } from "react-scroll-motion";
+import { Animator, Fade } from "react-scroll-motion";
 import { ResponsiveProps } from "../../App";
 import OctagonIcon from "../_Icons/QuaterOctagonIcon";
 
@@ -60,7 +60,7 @@ const AboutMeTechnologies: React.FunctionComponent<AboutMeTechnologiesProps> = (
             flexDirection: "column",
             justifyContent: "center",
           }}
-          animation={batch(MoveIn(-1000, 100), MoveOut(-1000, 100))}
+          animation={Fade()}
         >
           <p className="heading-white">1.1 About me - Techstack</p>
           <p className="text-white text-italic">
