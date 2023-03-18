@@ -24,6 +24,7 @@ const Projects: FunctionComponent<ProjectsProps> = (props) => {
     position: "absolute",
     zIndex: 2,
     top: "calc(50% - 15px)",
+    cursor: "pointer",
   };
 
   // Hide arrows on mobile and only do 2x br on mobile

@@ -44,20 +44,21 @@ function App() {
       <ScrollPage>
         <div className="scrollPage">
           <Projects isLargeScreen={isLargeScreen} />
-          <a
-            style={{
-              position: "absolute",
-              bottom: "0",
-              right: "15px",
-              fontSize: "1em",
-            }}
-            className="text-white"
-            href="/Privacy.html"
-            target="_blank"
-          >
-            Privacy Statement
-          </a>
         </div>
+        <a
+          style={{
+            position: "absolute",
+            bottom: "15px",
+            right: "15px",
+            fontSize: "1.2em",
+            zIndex: 2,
+          }}
+          className="text-white"
+          href="/Privacy.html"
+          target="_blank"
+        >
+          Privacy Statement
+        </a>
       </ScrollPage>
     </ScrollContainer>
   );
