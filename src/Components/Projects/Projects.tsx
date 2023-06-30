@@ -9,12 +9,13 @@ import GithubIcon from "../_Icons/GithubIcon";
 import { ResponsiveProps } from "../../App";
 import GooglePlayIcon from "../_Icons/GooglePlayIcon";
 import OctagonIcon from "../_Icons/QuaterOctagonIcon";
+import { COLOR_GREEN, COLOR_WHITE } from "../..";
 
 interface ProjectsProps extends ResponsiveProps {}
 
 const Projects: FunctionComponent<ProjectsProps> = (props) => {
   const indicatorStyles: React.CSSProperties = {
-    color: "greenyellow",
+    color: COLOR_GREEN,
     display: "inline-block",
     margin: "0 1%",
     cursor: "pointer",
@@ -45,14 +46,14 @@ const Projects: FunctionComponent<ProjectsProps> = (props) => {
         renderArrowPrev={(onClickHandler, hasPrev, label) =>
           hasPrev && (
             <div onClick={onClickHandler} style={{ ...arrowStyles, left: 15 }}>
-              <ChevronLeftIcon color="whitesmoke" size="70" />
+              <ChevronLeftIcon color={COLOR_WHITE} size="70" />
             </div>
           )
         }
         renderArrowNext={(onClickHandler, hasNext, label) =>
           hasNext && (
             <div onClick={onClickHandler} style={{ ...arrowStyles, right: 15 }}>
-              <ChevronRightIcon color="whitesmoke" size="70" />
+              <ChevronRightIcon color={COLOR_WHITE} size="70" />
             </div>
           )
         }
@@ -60,7 +61,7 @@ const Projects: FunctionComponent<ProjectsProps> = (props) => {
           if (isSelected) {
             return (
               <p
-                style={{ ...indicatorStyles, color: "whitesmoke" }}
+                style={{ ...indicatorStyles, color: COLOR_WHITE }}
                 aria-label={`Selected: ${label} ${index + 1}`}
                 title={`Selected: ${label} ${index + 1}`}
                 className="projects-indicator-dot"
@@ -93,7 +94,7 @@ const Projects: FunctionComponent<ProjectsProps> = (props) => {
           <p className="text-white projects-subtitle w-80">
             Private project -{" "}
             <a
-              style={{ color: "greenyellow", display: "inline-flex" }}
+              style={{ color: COLOR_GREEN, display: "inline-flex" }}
               target="_blank"
               rel="noreferrer"
               href="https://github.com/DevelopmentDennis/GooglePlayground"
@@ -101,7 +102,7 @@ const Projects: FunctionComponent<ProjectsProps> = (props) => {
               View on Github
               <GithubIcon
                 size="1.5em"
-                color="greenyellow"
+                color={COLOR_GREEN}
                 style={{ marginLeft: "5px" }}
               />
             </a>
@@ -135,7 +136,7 @@ const Projects: FunctionComponent<ProjectsProps> = (props) => {
           <p className="text-white projects-subtitle w-80">
             Private project -{" "}
             <a
-              style={{ color: "greenyellow", display: "inline-flex" }}
+              style={{ color: COLOR_GREEN, display: "inline-flex" }}
               target="_blank"
               rel="noreferrer"
               href="https://github.com/DevelopmentDennis/HouseholdCostTracker"
@@ -143,13 +144,13 @@ const Projects: FunctionComponent<ProjectsProps> = (props) => {
               View on Github
               <GithubIcon
                 size="1.5em"
-                color="greenyellow"
+                color={COLOR_GREEN}
                 style={{ marginLeft: "5px" }}
               />
             </a>{" "}
             -{" "}
             <a
-              style={{ color: "greenyellow", display: "inline-flex" }}
+              style={{ color: COLOR_GREEN, display: "inline-flex" }}
               target="_blank"
               rel="noreferrer"
               href="https://play.google.com/store/apps/details?id=com.monthlycosttracker"
@@ -157,7 +158,7 @@ const Projects: FunctionComponent<ProjectsProps> = (props) => {
               View on Google Play
               <GooglePlayIcon
                 size="1.5em"
-                color="greenyellow"
+                color={COLOR_GREEN}
                 style={{ marginLeft: "5px" }}
               />
             </a>
@@ -185,7 +186,7 @@ const Projects: FunctionComponent<ProjectsProps> = (props) => {
           <p className="text-white projects-subtitle w-80">
             Private project -{" "}
             <a
-              style={{ color: "greenyellow", display: "inline-flex" }}
+              style={{ color: COLOR_GREEN, display: "inline-flex" }}
               target="_blank"
               rel="noreferrer"
               href="https://github.com/DevelopmentDennis/Website"
@@ -193,7 +194,7 @@ const Projects: FunctionComponent<ProjectsProps> = (props) => {
               View on Github
               <GithubIcon
                 size="1.5em"
-                color="greenyellow"
+                color={COLOR_GREEN}
                 style={{ marginLeft: "5px" }}
               />
             </a>
@@ -208,13 +209,11 @@ const Projects: FunctionComponent<ProjectsProps> = (props) => {
         size="50vh"
         viewPortX={8}
         viewPortY={8}
-        className="background-icon"
+        className="background-icon abs-b-0 abs-l-0"
         style={{
-          bottom: 0,
-          left: 0,
           transform: "rotate(-90deg)",
         }}
-        color="yellowgreen"
+        color={COLOR_GREEN}
       />
     </>
   );

@@ -1,3 +1,8 @@
+:root {
+  --color-white: whitesmoke;
+  --color-green: yellowgreen;
+}
+
 body {
   margin: 0;
 
@@ -6,13 +11,13 @@ body {
 }
 
 .heading-white {
-  color: whitesmoke;
+  color: var(--color-white);
   font-family: Poppins;
   font-weight: normal;
 }
 
 .text-white {
-  color: whitesmoke;
+  color: var(--color-white);
   font-family: Poppins;
   font-weight: normal;
 }
@@ -33,6 +38,14 @@ body {
   width: 80%;
 }
 
+.w-100 {
+  width: 100%;
+}
+
+.h-100 {
+  height: 100%;
+}
+
 .heading-white {
   font-size: 2em;
 }
@@ -43,6 +56,65 @@ body {
 .background-icon {
   position: absolute;
   opacity: 0.4;
+}
+
+.mb-0 {
+  margin-bottom: 0;
+}
+
+.mt-0 {
+  margin-top: 0;
+}
+
+.ml-0 {
+  margin-left: 0;
+}
+
+.mr-0 {
+  margin-right: 0;
+}
+
+.abs-t-0 {
+  top: 0;
+}
+
+.abs-l-0 {
+  left: 0;
+}
+
+.abs-r-0 {
+  right: 0;
+}
+
+.abs-b-0 {
+  bottom: 0;
+}
+
+.d-flex {
+  display: flex;
+}
+
+.d-column {
+  flex-direction: column;
+}
+
+.d-row {
+  flex-direction: row;
+}
+
+.align-center {
+  align-items: center;
+}
+
+.justify-center {
+  justify-content: center;
+}
+.rotate-180 {
+  transform: rotate(180deg);
+}
+
+.rotate-90 {
+  transform: rotate(90deg);
 }
 
 /* Large and up */

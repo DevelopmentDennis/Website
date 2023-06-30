@@ -8,11 +8,14 @@
   .recentwork-date-text {
     color: black;
   }
+  .recentwork-heading {
+    display: none;
+  }
 }
 
 /* Medium and up */
 @media screen and (min-width: 1170px) {
   .recentwork-date-text {
-    color: whitesmoke;
+    color: var(--color-white);
   }
 }

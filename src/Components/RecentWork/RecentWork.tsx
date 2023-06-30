@@ -11,6 +11,7 @@ import SchoolIcon from "../_Icons/SchoolIcon";
 import IconPlus from "../_Icons/PlusIcon";
 import { ResponsiveProps } from "../../App";
 import OctagonIcon from "../_Icons/QuaterOctagonIcon";
+import { COLOR_GREEN, COLOR_WHITE } from "../..";
 
 interface RecentWorkProps extends ResponsiveProps {}
 
@@ -90,8 +91,8 @@ const RecentWork: FunctionComponent<RecentWorkProps> = (props) => {
   const GetDisplayMoreIcon = (direction: "-" | "+") => (
     <VerticalTimelineElement
       className="vertical-timeline-element"
-      iconStyle={{ background: "yellowgreen", cursor: "pointer" }}
-      icon={<IconPlus color="whitesmoke" />}
+      iconStyle={{ background: COLOR_GREEN, cursor: "pointer" }}
+      icon={<IconPlus color={COLOR_WHITE} />}
       iconOnClick={() => {
         SetCurrentlyDisplayedElement((value) =>
           direction === "+" ? value + 1 : value - 1
@@ -101,27 +102,14 @@ const RecentWork: FunctionComponent<RecentWorkProps> = (props) => {
   );
 
   return (
-    <div
-      style={{
-        width: "100%",
-        height: "100%",
-        display: "flex",
-        flexDirection: "column",
-        justifyContent: "center",
-        alignItems: "center",
-      }}
-    >
+    <div className="w-100 h-100 d-flex justify-center align-center d-column">
+      <p className="heading-white recentwork-heading">2. Work experience</p>
       <OctagonIcon
         size="50vh"
         viewPortX={8}
         viewPortY={0}
-        className="background-icon"
-        style={{
-          right: 0,
-          bottom: 0,
-          transform: "rotate(180deg)",
-        }}
-        color="yellowgreen"
+        className="background-icon abs-r-0 abs-b-0 rotate-180"
+        color={COLOR_GREEN}
       />
       <VerticalTimeline>
         {!isSmallHeight && timelineElements}

@@ -6,28 +6,19 @@ import profileImage from "../../_Images/Profile.jpg";
 import OctagonIcon from "../_Icons/QuaterOctagonIcon";
 import "./AboutMe.css";
 import AboutMeTechnologies from "./AboutMeTechnologies";
+import { COLOR_GREEN } from "../..";
 
 interface AboutMeProps extends ResponsiveProps {}
 
 const AboutMe: FunctionComponent<AboutMeProps> = (props) => {
   return (
-    <div
-      style={{
-        height: "100%",
-      }}
-      className="aboutme-layout"
-    >
+    <div className="aboutme-layout h-100">
       <OctagonIcon
         viewPortX={8}
         viewPortY={8}
-        className="background-icon"
+        className="background-icon abs-t-0 abs-r-0 rotate-90"
         size="50vh"
-        style={{
-          top: 0,
-          right: 0,
-          transform: "rotate(90deg)",
-        }}
-        color="yellowgreen"
+        color={COLOR_GREEN}
       />
       <div className="aboutme-img-container">
         <div className="aboutme-round-corners">

@@ -22,38 +22,31 @@ function App() {
   return (
     <ScrollContainer snap="proximity">
       <ScrollPage>
-        <div className="scrollPage">
+        <div className="app-scrollPage">
           <Welcome isLargeScreen={isLargeScreen} />
         </div>
       </ScrollPage>
       <ScrollPage>
-        <div className="scrollPage">
+        <div className="app-scrollPage">
           <AboutMe isLargeScreen={isLargeScreen} />
         </div>
       </ScrollPage>
       {!isLargeScreen && (
-        <ScrollPage className="scrollPage">
+        <ScrollPage className="app-scrollPage">
           <AboutMeTechnologies isLargeScreen={isLargeScreen} />
         </ScrollPage>
       )}
       <ScrollPage>
-        <div className="scrollPage">
+        <div className="app-scrollPage">
           <RecentWork isLargeScreen={isLargeScreen} />
         </div>
       </ScrollPage>
       <ScrollPage>
-        <div className="scrollPage">
+        <div className="app-scrollPage">
           <Projects isLargeScreen={isLargeScreen} />
         </div>
         <a
-          style={{
-            position: "absolute",
-            bottom: "15px",
-            right: "15px",
-            fontSize: "1.2em",
-            zIndex: 2,
-          }}
-          className="text-white"
+          className="app-privacy-statement text-white"
           href="/Privacy.html"
           target="_blank"
         >

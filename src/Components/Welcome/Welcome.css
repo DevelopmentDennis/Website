@@ -2,18 +2,18 @@
   opacity: 50%;
 }
 
-.name:hover::after {
+.welcome-name:hover::after {
   width: 0%;
 }
 
 /* Small Screen */
 @media screen and (max-width: 39.9375em) {
-  .name {
+  .welcome-name {
     font-size: 3em;
-
     position: relative;
-    color: yellowgreen;
+    color: var(--color-green);
   }
+
   .welcome-container {
     display: flex;
     height: inherit;
@@ -44,18 +44,18 @@
 
 /* Medium Screen */
 @media screen and (min-width: 40em) and (max-width: 74.9375em) {
-  .name {
+  .welcome-name {
     font-size: 4em;
     position: relative;
-    color: yellowgreen;
+    color: var(--color-green);
   }
 
-  .name::after {
+  .welcome-name::after {
     content: "Dennis Ostertag";
     position: absolute;
     top: 0;
     left: 0;
-    color: whitesmoke;
+    color: var(--color-white);
     width: 100%;
     white-space: nowrap;
     overflow: hidden;
@@ -94,18 +94,18 @@
 
 /* Large and up */
 @media screen and (min-width: 75em) {
-  .name {
+  .welcome-name {
     font-size: 5em;
     position: relative;
-    color: yellowgreen;
+    color: var(--color-green);
   }
 
-  .name::after {
+  .welcome-name::after {
     content: "Dennis Ostertag";
     position: absolute;
     top: 0;
     left: 0;
-    color: whitesmoke;
+    color: var(--color-white);
     width: 100%;
     white-space: nowrap;
     overflow: hidden;

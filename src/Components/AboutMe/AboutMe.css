@@ -6,7 +6,7 @@
 }
 
 li.dots {
-  color: whitesmoke;
+  color: var(--color-white);
   font-family: Poppins;
 }
 
@@ -16,13 +16,14 @@ ul .dots {
 
 ul li.dots::before {
   content: "\2022"; /* Add content: \2022 is the CSS Code/unicode for a bullet */
-  color: greenyellow; /* Change the color */
+  color: var(--color-green); /* Change the color */
   font-weight: bolder; /* If you want it to be bold */
   display: inline-block; /* Needed to add space between the bullet and the text */
 }
 
 .divider {
-  border-bottom: 2px solid whitesmoke;
+  border-bottom: 2px solid;
+  border-bottom-color: var(--color-white);
   width: 90%;
 }
 

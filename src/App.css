@@ -2,10 +2,18 @@
   text-align: center;
 }
 
-.scrollPage {
+.app-scrollPage {
   background-color: black;
   flex-grow: 1;
   flex-direction: column;
   display: flex;
   height: 100%;
+}
+
+.app-privacy-statement {
+  position: absolute;
+  bottom: 15px;
+  right: 15px;
+  font-size: 1.2em;
+  z-index: 2;
 }

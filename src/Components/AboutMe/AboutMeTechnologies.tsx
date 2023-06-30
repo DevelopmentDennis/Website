@@ -2,6 +2,7 @@ import * as React from "react";
 import { Animator, Fade } from "react-scroll-motion";
 import { ResponsiveProps } from "../../App";
 import OctagonIcon from "../_Icons/QuaterOctagonIcon";
+import { COLOR_GREEN } from "../..";
 
 interface AboutMeTechnologiesProps extends ResponsiveProps {}
 
@@ -10,9 +11,8 @@ const AboutMeTechnologies: React.FunctionComponent<AboutMeTechnologiesProps> = (
 ) => {
   const techList = (
     <div
+      className="d-flex d-row"
       style={{
-        display: "flex",
-        flexDirection: "row",
         justifyContent: "space-around",
       }}
     >
@@ -31,34 +31,24 @@ const AboutMeTechnologies: React.FunctionComponent<AboutMeTechnologiesProps> = (
   );
 
   return (
-    <div
-      style={{
-        height: "100%",
-      }}
-    >
+    <div className="w-100">
       {!props.isLargeScreen && (
         <OctagonIcon
           viewPortX={8}
           viewPortY={0}
           size="50vh"
-          className="background-icon"
-          style={{
-            left: 0,
-          }}
-          color="yellowgreen"
+          className="background-icon abs-l-0"
+          color={COLOR_GREEN}
         />
       )}
       {props.isLargeScreen && techList}
       {!props.isLargeScreen && (
         <Animator
+          className="h-100 d-flex d-column justify-center"
           style={{
             paddingTop: "3%",
             paddingLeft: "5%",
             paddingRight: "5%",
-            height: "100%",
-            display: "flex",
-            flexDirection: "column",
-            justifyContent: "center",
           }}
           animation={Fade()}
         >
