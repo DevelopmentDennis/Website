@@ -1,4 +1,4 @@
-# This is my website
+# This is my personal website
 
 # Getting Started with this Web App
 
