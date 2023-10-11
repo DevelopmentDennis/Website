@@ -48,6 +48,7 @@ function App() {
         <a
           className="app-privacy-statement text-white"
           href="/Privacy.html"
+          aria-label="Privacy Statement"
           target="_blank"
         >
           Privacy Statement

@@ -51,10 +51,18 @@ const Welcome: FunctionComponent<WelcomeProps> = () => {
         </div>
       </div>
       <div className="welcome-icons-container">
-        <a className="icon" href="https://github.com/DevelopmentDennis">
+        <a
+          className="icon"
+          href="https://github.com/DevelopmentDennis"
+          aria-label="View on Github"
+        >
           <GithubIcon size="2.5em" color={COLOR_WHITE} />
         </a>
-        <a className="icon" href="https://www.xing.com/profile/Dennis_Ostertag">
+        <a
+          className="icon"
+          href="https://www.xing.com/profile/Dennis_Ostertag"
+          aria-label="View on Xing"
+        >
           <XingIcon
             size="2.5em"
             color={COLOR_WHITE}
@@ -64,6 +72,7 @@ const Welcome: FunctionComponent<WelcomeProps> = () => {
         <a
           className="icon"
           href="https://www.linkedin.com/in/dennis-ostertag-2a0773204/"
+          aria-label="View on Linkedin"
         >
           <LinkedinIcon size="2.5em" color={COLOR_WHITE} />
         </a>

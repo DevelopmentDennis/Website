@@ -2,6 +2,7 @@ import * as React from "react";
 import { FunctionComponent } from "react";
 import { Animator, Fade } from "react-scroll-motion";
 import { ResponsiveProps } from "../../App";
+import modernProfileImage from "../../_Images/profile.webp";
 import profileImage from "../../_Images/Profile.jpg";
 import OctagonIcon from "../_Icons/QuaterOctagonIcon";
 import "./AboutMe.css";
@@ -22,7 +23,10 @@ const AboutMe: FunctionComponent<AboutMeProps> = (props) => {
       />
       <div className="aboutme-img-container">
         <div className="aboutme-round-corners">
-          <img className="cover-img" src={profileImage} alt="Profile"></img>
+          <picture>
+            <source srcSet={modernProfileImage} type="image/webp" />
+            <img alt="Profile" src={profileImage} className="cover-img" />
+          </picture>
         </div>
       </div>
       <div className="aboutme-text-container">

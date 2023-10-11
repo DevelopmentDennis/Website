@@ -18,7 +18,6 @@ const Projects: FunctionComponent<ProjectsProps> = (props) => {
     color: COLOR_GREEN,
     display: "inline-block",
     margin: "0 1%",
-    cursor: "pointer",
   };
 
   const arrowStyles: React.CSSProperties = {
@@ -57,7 +56,7 @@ const Projects: FunctionComponent<ProjectsProps> = (props) => {
             </div>
           )
         }
-        renderIndicator={(onClickHandler, isSelected, index, label) => {
+        renderIndicator={(_onClickHandler, isSelected, index, label) => {
           if (isSelected) {
             return (
               <p
@@ -73,10 +72,7 @@ const Projects: FunctionComponent<ProjectsProps> = (props) => {
           return (
             <p
               style={indicatorStyles}
-              onClick={onClickHandler}
-              onKeyDown={onClickHandler}
               key={index}
-              role="button"
               tabIndex={0}
               title={`${label} ${index + 1}`}
               aria-label={`${label} ${index + 1}`}
@@ -97,6 +93,7 @@ const Projects: FunctionComponent<ProjectsProps> = (props) => {
               style={{ color: COLOR_GREEN, display: "inline-flex" }}
               target="_blank"
               rel="noreferrer"
+              aria-label="View on Github"
               href="https://github.com/DevelopmentDennis/GooglePlayground"
             >
               View on Github
@@ -138,6 +135,7 @@ const Projects: FunctionComponent<ProjectsProps> = (props) => {
             <a
               style={{ color: COLOR_GREEN, display: "inline-flex" }}
               target="_blank"
+              aria-label="View on Github"
               rel="noreferrer"
               href="https://github.com/DevelopmentDennis/HouseholdCostTracker"
             >
@@ -153,6 +151,7 @@ const Projects: FunctionComponent<ProjectsProps> = (props) => {
               style={{ color: COLOR_GREEN, display: "inline-flex" }}
               target="_blank"
               rel="noreferrer"
+              aria-label="View on Google Play"
               href="https://play.google.com/store/apps/details?id=com.monthlycosttracker"
             >
               View on Google Play
@@ -189,6 +188,7 @@ const Projects: FunctionComponent<ProjectsProps> = (props) => {
               style={{ color: COLOR_GREEN, display: "inline-flex" }}
               target="_blank"
               rel="noreferrer"
+              aria-label="View on Github"
               href="https://github.com/DevelopmentDennis/Website"
             >
               View on Github

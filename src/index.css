@@ -132,12 +132,14 @@ body {
   src: local("PoppinsRegular"),
     url("../fonts/Poppins-Regular.ttf") format("truetype");
   font-weight: normal;
+  font-display: swap;
 }
 
 @font-face {
   font-family: "Poppins";
   src: local("PoppinsBold"), url("../fonts/Poppins-Bold.ttf") format("truetype");
   font-weight: bold;
+  font-display: swap;
 }
 
 @font-face {
@@ -146,4 +148,5 @@ body {
     url("../fonts/Poppins-Italic.ttf") format("truetype");
   font-weight: normal;
   font-style: italic;
+  font-display: swap;
 }
