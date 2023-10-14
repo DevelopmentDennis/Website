@@ -14,12 +14,12 @@
       "density": "4.0"
     }
   ],
-  "start_url": "website-dennis-ostertag",
+  "start_url": "https://website.dennisostertag.de",
   "id": "website-dennis-ostertag-id",
   "display": "standalone",
   "theme_color": "#000000",
   "background_color": "#000000",
-  "orientation": "landscape",
+  "orientation": "portrait",
   "background_color": "#ffffff",
   "scope": "https://website.dennisostertag.de"
 }
