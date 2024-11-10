@@ -61,6 +61,7 @@ const Projects: FunctionComponent<ProjectsProps> = (props) => {
             return (
               <p
                 style={{ ...indicatorStyles, color: COLOR_WHITE }}
+                key={index}
                 aria-label={`Selected: ${label} ${index + 1}`}
                 title={`Selected: ${label} ${index + 1}`}
                 className="projects-indicator-dot"
