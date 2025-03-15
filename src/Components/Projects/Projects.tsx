@@ -1,5 +1,5 @@
 import * as React from "react";
-import { FunctionComponent } from "react";
+import { FunctionComponent, useState } from "react";
 import "./Projects.css";
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 import { Carousel } from "react-responsive-carousel";
@@ -14,11 +14,8 @@ import { COLOR_GREEN, COLOR_WHITE } from "../..";
 interface ProjectsProps extends ResponsiveProps {}
 
 const Projects: FunctionComponent<ProjectsProps> = (props) => {
-  const indicatorStyles: React.CSSProperties = {
-    color: COLOR_GREEN,
-    display: "inline-block",
-    margin: "0 1%",
-  };
+  const NUMBER_OF_PROJECTS = 5;
+  const [currentPage, setCurrentPage] = useState(0);
 
   const arrowStyles: React.CSSProperties = {
     position: "absolute",
@@ -27,19 +24,22 @@ const Projects: FunctionComponent<ProjectsProps> = (props) => {
     cursor: "pointer",
   };
 
+  const indicatorStyle: React.CSSProperties = {
+    position: "absolute",
+    bottom: "8%",
+  };
+
   // Hide arrows on mobile and only do 2x br on mobile
   return (
     <>
-      <p
-        className="heading-white"
-        style={{ marginLeft: "5%", marginBottom: "2%" }}
-      >
+      <p className="heading-white" style={{ marginLeft: "5%" }}>
         3. Some of the projects i worked on
       </p>
 
       <Carousel
         showThumbs={false}
         infiniteLoop
+        showIndicators={false}
         showArrows={props.isLargeScreen}
         showStatus={false}
         renderArrowPrev={(onClickHandler, hasPrev, label) =>
@@ -56,33 +56,7 @@ const Projects: FunctionComponent<ProjectsProps> = (props) => {
             </div>
           )
         }
-        renderIndicator={(_onClickHandler, isSelected, index, label) => {
-          if (isSelected) {
-            return (
-              <p
-                style={{ ...indicatorStyles, color: COLOR_WHITE }}
-                key={index}
-                aria-label={`Selected: ${label} ${index + 1}`}
-                title={`Selected: ${label} ${index + 1}`}
-                className="projects-indicator-dot"
-              >
-                ⬤
-              </p>
-            );
-          }
-          return (
-            <p
-              style={indicatorStyles}
-              key={index}
-              tabIndex={0}
-              title={`${label} ${index + 1}`}
-              aria-label={`${label} ${index + 1}`}
-              className="projects-indicator-dot"
-            >
-              ⬤
-            </p>
-          );
-        }}
+        onChange={(index) => setCurrentPage(index)}
       >
         <div className="grid-centered">
           <p className="heading-white projects-title w-80">
@@ -206,6 +180,30 @@ const Projects: FunctionComponent<ProjectsProps> = (props) => {
           </p>
         </div>
       </Carousel>
+
+      <div className="w-100 d-flex d-row justify-center" style={indicatorStyle}>
+        {[...Array(NUMBER_OF_PROJECTS)].map((_, index) => {
+          return (
+            <p
+              style={{
+                backgroundColor: index === currentPage ? COLOR_WHITE : "black",
+                marginLeft: "1%",
+                marginRight: "1%",
+                borderStyle: "solid",
+                borderRadius: "100%",
+                borderColor: COLOR_WHITE,
+                borderWidth: "1px",
+                width: "10px",
+                height: "10px",
+              }}
+              key={index}
+              aria-label={`carousel indicator: ${index}`}
+              className="projects-indicator-dot"
+            ></p>
+          );
+        })}
+      </div>
+
       <OctagonIcon
         size="50vh"
         viewPortX={8}

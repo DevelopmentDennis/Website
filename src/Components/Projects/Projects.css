@@ -16,6 +16,7 @@
   padding-top: 7.5%;
   padding-bottom: 7.5%;
 }
+
 /* Small Screen */
 @media screen and (max-width: 39.9375em) {
   .projects-subtitle {
@@ -23,6 +24,7 @@
   }
   .projects-title {
     text-decoration: underline;
+    text-decoration-color: var(--color-green);
     font-size: 1.5em;
   }
   .projects-text {
@@ -39,6 +41,7 @@
   }
   .projects-title {
     text-decoration: underline;
+    text-decoration-color: var(--color-green);
     font-size: 1.5em;
   }
   .projects-text {
@@ -56,6 +59,7 @@
   }
   .projects-title {
     text-decoration: underline;
+    text-decoration-color: var(--color-green);
   }
   .projects-indicator-dot {
     font-size: 1.5em;
