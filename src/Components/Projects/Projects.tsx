@@ -156,7 +156,7 @@ const Projects: FunctionComponent<ProjectsProps> = (props) => {
           </p>
         </div>
         <div className="grid-centered">
-          <p className="heading-white w-80">Personal Website</p>
+          <p className="heading-white projects-title w-80">Personal Website</p>
           <p className="text-white projects-subtitle w-80">
             Private project -{" "}
             <a
