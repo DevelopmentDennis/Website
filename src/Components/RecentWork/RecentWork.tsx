@@ -28,7 +28,21 @@ const RecentWork: FunctionComponent<RecentWorkProps> = (props) => {
     <VerticalTimelineElement
       key={1}
       className="vertical-timeline-element text-poppins"
-      date="July 2019 - present"
+      date="July 2025 - present"
+      dateClassName="recentwork-date-text"
+      iconStyle={{ background: "yellowgreen" }}
+      icon={<WorkIcon color="whitesmoke" />}
+    >
+      <h3 className="vertical-timeline-element-title">Software Developer</h3>
+      <h4 className="vertical-timeline-element-subtitle">
+        TÜV SÜD Industrie Service GmbH
+      </h4>
+      <p>Development and maintenance of software for certification</p>
+    </VerticalTimelineElement>,
+    <VerticalTimelineElement
+      key={1}
+      className="vertical-timeline-element text-poppins"
+      date="July 2019 - June 2025"
       dateClassName="recentwork-date-text"
       iconStyle={{ background: "yellowgreen" }}
       icon={<WorkIcon color="whitesmoke" />}
@@ -37,7 +51,7 @@ const RecentWork: FunctionComponent<RecentWorkProps> = (props) => {
         Professional Software Developer
       </h3>
       <h4 className="vertical-timeline-element-subtitle">
-        AraCom IT Services AG
+        AraCom IT Services GmbH
       </h4>
       <p>
         Software Development for several different customers, in small and large
